@@ -1,0 +1,15 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  # Docusaurus server
+  - port: 3000
+    onOpen: ignore
+
+tasks:
+  - init: yarn install
+
+github:
+  prebuilds:
+    branches: true
+    pullRequests: true

@@ -31,8 +31,38 @@ As you can see, you also need to send along your `api_key` that you can find in 
 The event name is a string and can be anything you want. Make sure to stick with an event name once chosen, because events are grouped together by their names.
 
 ### Constraints
-Event names can be maximally 25 characters long and only contain numbers, letters and spaces. Before being saved, event names are capitalized. For example, if you set your event name to "Signed up", it will be saved as "Signed Up". The event names "all" and "All" are reserved by Fugu and you can't use them.
+Event names need be formatted as `String`, can be maximally 25 characters long and only contain numbers, letters and spaces. Before being saved, event names are capitalized. For example, if you set your event name to "Signed up", it will be saved as "Signed Up". The event names "all" and "All" are reserved by Fugu and you can't use them.
 
 
 ## Event Properties
 Event properties are additional data that you might want to save along with your events. When analyzing your data, you can use event properties to break down your data deeper.
+
+### Constraints
+Event properties need to be formatted as `JSON` (or stringified JSON). The values are converted to `String` before being saved and currently only one level of nesting is allowed. For example, if you send an event propert like this:
+
+```json
+// don't do this
+{
+  "device_info": {
+    "os": "iOS 13",
+    "model": "iPhone 11"
+  }
+}
+```
+It will be saved like this:
+
+```json
+{
+  "device_info": "{\"os\": \"iOS 13\", \"model\": \"iPhone 11\"}"
+}
+```
+
+Therefore, flatten your properties before sending them over. Like this:
+
+```json
+// do this instead
+{
+  "device_os": "iOS 13",
+  "device_model": "iPhone 11"
+}
+```

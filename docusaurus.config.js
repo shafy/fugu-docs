@@ -22,13 +22,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/shafy/fugu-docs',
-        },
-        blog: {
-          showReadingTime: false,
-          editUrl:
-            'https://github.com/shafy/fugu-docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -41,21 +37,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Fugu Docs',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Fugu Logo',
+          src: 'img/fugu_logo.jpg',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/shafy/fugu',
             label: 'GitHub',
             position: 'right',
           },
@@ -65,28 +54,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Fugu',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'About',
+                to: 'https://fugu.lol',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Create an Account',
+                to: 'https://app.fugu.lol/users/sign_up',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Sign in',
+                to: 'https://app.fugu.lol/users/sign_in',
               },
             ],
           },
@@ -94,8 +74,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Twitter',
+                to: 'https://twitter.com/canolcer',
               },
               {
                 label: 'GitHub',
@@ -104,7 +84,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Fugu. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

@@ -1,35 +1,16 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the Fugu Docs. If you've landed here, you probably already know what Fugu is. If that's the case and you already have a Fugu account, [learn how to track your first event](/getting-started/tracking-an-event).
 
-## Getting Started
+If you don't know what Fugu is, you're about to find out: [Fugu](https://fugu.lol/) is a product analytics software with a strong focus on simplicity and privay-friendliness. It's also [open-source](https://github.com/shafy/fugu) and self-hostable (although we recommend the cloud version to most people).
 
-Get started by **creating a new site**.
+We believe that product analytics and privacy can co-exist, and that tracking in a privacy-friendly way yields more than enough insights to understand how your users use your app and how you can improve it.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+The focus on privacy-friendliness and simplicity translates to a few things: First, Fugu never tracks any personally identifiable information such as IP addresses. Second, Fugu is made for people who don't need fancy product analytics tools but prefer a set of easy-to-use features over a complex user experience.
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npm init docusaurus@latest my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+Fugu is 100% self-funded. We will never raise venture capital and never sell your data to third parties (or use it in any way). The only revenue stream is the $9/month subscription fee that we charge to our customers. Our servers are located in Germany and your data doesn't leave the EU. 

@@ -15,6 +15,9 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'shafy',
   projectName: 'fugu-docs',
+  scripts: [
+    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.fugu.lol'},
+  ],
 
   presets: [
     [
@@ -36,6 +39,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        apiKey: 'YOUR_SEARCH_API_KEY',
+        indexName: 'YOUR_INDEX_NAME'
+      },
       navbar: {
         title: 'Fugu Docs',
         logo: {

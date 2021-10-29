@@ -38,7 +38,7 @@ Event names need be formatted as `String`, can be maximally 25 characters long a
 Event properties are additional data that you might want to save along with your events. When analyzing your data, you can use event properties to break down your data deeper.
 
 ### Constraints
-Event properties need to be formatted as `JSON` (or stringified JSON). The values are converted to `String` before being saved and currently only one level of nesting is allowed. For example, if you send an event propert like this:
+Event properties need to be formatted as `JSON` (or stringified JSON). The values are converted to `String` before being saved and currently only one level of nesting is allowed. For example, if you send an event property like this:
 
 ```json
 // don't do this

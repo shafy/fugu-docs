@@ -7,7 +7,7 @@ slug: /
 
 Welcome to the Fugu Docs. If you've landed here, you probably already know what Fugu is. If that's the case and you already have a Fugu account, [learn how to track your first event](/getting-started/tracking-an-event).
 
-If you don't know what Fugu is, you're about to find out: [Fugu](https://fugu.lol/) is a product analytics software with a strong focus on simplicity and privay-friendliness. It's also [open-source](https://github.com/shafy/fugu) and self-hostable (although we recommend the cloud version to most people).
+If you don't know what Fugu is, you're about to find out: [Fugu](https://fugu.lol/) is a product analytics software with a strong focus on simplicity and privacy-friendliness. It's also [open-source](https://github.com/shafy/fugu) and self-hostable (although we recommend the cloud version to most people).
 
 We believe that product analytics and privacy can co-exist, and that tracking in a privacy-friendly way yields more than enough insights to understand how your users use your app and how you can improve it.
 

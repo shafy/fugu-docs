@@ -40,8 +40,8 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       algolia: {
-        apiKey: 'c3b256672bd38af90fe95c925014ad4e',
-        appId: 'BH4D9OD16A',
+        apiKey: 'f101ce8b3beb62098d6abd98711cf054',
+        appId: 'HVICHSGTAO',
         indexName: 'fugu'
       },
       navbar: {

@@ -16,7 +16,7 @@ curl "https://app.fugu.lol/api/v1/events" \
 -H "Accept: application/json" \
 -H "Content-Type: application/json" \
 -d '{
-      "api_key": "very_secret"
+      "api_key": "very_secret",
       "name": "Signed Up",
       "properties": {
         "platform": "web",
@@ -66,3 +66,15 @@ Therefore, flatten your properties before sending them over. Like this:
   "device_model": "iPhone 11"
 }
 ```
+
+Per our terms of service, you are not allowed to track personally identifiable information and we enforce that by checking of property names or values may contain such information. For example, this can be IP addresses or email addresses.
+
+### Disallowed property names
+The following property names are disallowed or reserved:
+- "all"
+- "All"
+- "ip_address" (and variations)
+- "email" (and variations)
+- "phone" (and variations)
+
+We might update this list in the future.

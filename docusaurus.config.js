@@ -42,7 +42,11 @@ const config = {
       algolia: {
         apiKey: 'f101ce8b3beb62098d6abd98711cf054',
         appId: 'HVICHSGTAO',
-        indexName: 'fugu'
+        indexName: 'fugu',
+        searchParameters: {
+          clickAnalytics: false,
+          analytics: false,
+        }
       },
       navbar: {
         title: 'Fugu Docs',

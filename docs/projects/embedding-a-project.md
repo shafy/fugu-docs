@@ -20,7 +20,7 @@ This is just simply HTML and will run on any website where you can insert HTML. 
 
 ## Customize your embed code
 
-You can customize your embed code freely. Since it's an `iframe` element, you can have a look at the MDN docs for iframe to see what you can do. Here are some examples.
+You can customize your embed code freely. Since it's an `iframe` element, you can have a look at the [MDN docs for iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) to see what you can do. Here are some examples.
 
 
 ### Show a specific event, aggregation, date range or property breakdown

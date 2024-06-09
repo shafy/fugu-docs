@@ -11,9 +11,3 @@ You can toggle between the modes by clicking the "Toggle TEST mode" or "Toggle L
 ## Purpose
 
 The purpose of two different modes is that it allows you to track test or staging Events without messing up your live data. A good practice might be to use your test API key if you're developing on your local machine or for your staging server, and use the live API key for your production environment.
-
-Another neat quirk (if you're using the cloud version of Fugu) is that you can track Events in test mode without paying for Fugu. So, it's a great way to test Fugu and see if it's a good fit for you.
-
-
-## Auto deletion
-Test Events automatically delete after 14 days. Funnels created in test mode are not automatically deleted. That would be annoying.
